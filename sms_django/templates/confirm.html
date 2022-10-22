@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2 style="text-align: center">Confirm</h2>
+
+<form action="" method="post">
+    {% csrf_token %}
+    {% for ms in messages %}
+        <p>{{ ms }}</p>
+    {% endfor %}
+    <input type="text" name="confirm" id=""> <br> <br>
+    <button type="submit">Login</button>
+</form>
+
+
+</body>
+</html>
